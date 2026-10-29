@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BTI Junk Removal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Oswald:wght@500;700&family=Barlow+Condensed:ital,wght@0,500;0,600;0,800;1,800&display=swap">
+<meta name="description" content="Junk removal, cleanouts, moving help and furniture assembly in Tucson, AZ. Tap 4 buttons, text a photo, get your price. Call or text 520-486-6490.">
+<meta name="theme-color" content="#070807">
+<meta property="og:title" content="BTI Junk Removal | Tucson, AZ">
+<meta property="og:description" content="Junk gone. No stress. Text a photo, get your price before we load.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/logo.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"BTI Junk Removal","telephone":"+1-520-486-6490","areaServed":"Tucson, AZ","address":{"@type":"PostalAddress","addressLocality":"Tucson","addressRegion":"AZ","addressCountry":"US"},"image":"img/og.jpg","priceRange":"$$"}</script>
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<style>
+/* Layout: one phone column built like his flyer. Black ground, brush-stroke lime banners, chrome logo, sunset art.
+   Funnel: hero -> 4-tap quote builder -> prefilled text message to his phone. Everything else is proof that pushes back to the builder.
+   Single dark look on purpose: it is his brand. */
+:root{
+  --bg:#070807;
+  --panel:#111410;
+  --panel2:#181c16;
+  --line:#2b3326;
+  --fg:#f4f6ef;
+  --muted:#b0b9a6;
+  --lime:#7dff1a;
+  --lime-deep:#4fc400;
+  --ink:#070807;
+  --sun:#ff8a1f;
+  --brush:"Permanent Marker","Comic Sans MS",cursive;
+  --head:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  color-scheme:dark;
+}
+html{background:var(--bg);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:500;font-size:19px;line-height:1.4;padding-bottom:calc(86px + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+.wrap{max-width:600px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+
+/* brush stroke banner like the flyer */
+.brush{position:relative;display:inline-block;font-family:var(--brush);font-weight:400;color:var(--ink);background:var(--lime);padding:.12em .55em .2em;transform:rotate(-2deg);line-height:1.05;
+  clip-path:polygon(1% 12%,6% 2%,22% 6%,40% 0,61% 5%,80% 1%,97% 7%,100% 30%,98% 58%,100% 86%,92% 100%,70% 95%,48% 100%,27% 94%,8% 100%,0 80%,2% 52%);
+  box-shadow:0 0 0 0 transparent}
+.brushtext{font-family:var(--brush);color:var(--lime);text-shadow:0 2px 0 #000,0 0 18px rgba(125,255,26,.35);line-height:1.05}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(7,8,7,.95);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:8px}
+.top .name{font-family:var(--head);font-weight:700;font-size:20px;letter-spacing:.03em}
+.top .name b{color:var(--lime);font-family:var(--brush);font-weight:400;letter-spacing:0;margin-left:4px}
+.top a{font-family:var(--head);font-weight:700;font-size:17px;color:var(--lime);text-decoration:none;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;padding-block:14px 26px;background:radial-gradient(90% 55% at 50% 22%,rgba(255,138,31,.18),transparent 70%)}
+.logo{width:100%;max-width:520px;margin:0 auto;-webkit-mask-image:radial-gradient(120% 100% at 50% 40%,#000 70%,transparent 100%);mask-image:radial-gradient(120% 100% at 50% 40%,#000 70%,transparent 100%)}
+.hero h1{margin:6px 0 0;text-align:center;font-family:var(--head);font-weight:700;text-transform:uppercase;font-size:clamp(30px,8.6vw,44px);line-height:1.02;letter-spacing:.01em;text-wrap:balance}
+.hero h1 .brushtext{display:block;font-size:1.12em;text-transform:none;margin-top:4px}
+.hero .lede{text-align:center;color:var(--muted);margin:12px auto 18px;max-width:30ch;font-size:20px}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;border:0;border-radius:14px;background:var(--lime);color:var(--ink);font-family:var(--head);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;cursor:pointer;box-shadow:0 0 0 3px rgba(125,255,26,.18),0 10px 30px rgba(125,255,26,.18)}
+.cta.ghost{background:transparent;color:var(--lime);border:2px solid var(--lime);box-shadow:none;min-height:54px;font-size:19px}
+.cta svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.hero .row{display:grid;grid-template-columns:1fr;gap:10px}
+.phone{margin-top:12px;text-align:center;color:var(--muted);font-size:17px}
+.phone strong{font-family:var(--head);font-size:26px;color:var(--fg);user-select:all;letter-spacing:.02em}
+.checks{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+.checks li{display:flex;gap:8px;align-items:center;font-family:var(--head);font-weight:500;text-transform:uppercase;font-size:15px;letter-spacing:.03em}
+.checks svg{flex:none;width:20px;height:20px;stroke:var(--lime);fill:none;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+
+section{padding-block:36px;border-top:1px solid var(--line)}
+.h2{margin:0 0 6px;text-align:center}
+.h2 .brush{font-size:clamp(30px,9vw,42px)}
+.sub{text-align:center;color:var(--muted);margin:14px auto 22px;max-width:34ch}
+
+/* quote builder */
+.builder{background:var(--panel);border:2px solid var(--lime);border-radius:18px;padding:16px;box-shadow:0 0 40px rgba(125,255,26,.12)}
+.progress{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}
+.progress span{height:6px;border-radius:3px;background:var(--line)}
+.progress span.on{background:var(--lime)}
+.step h3{margin:0 0 12px;font-family:var(--head);font-weight:700;text-transform:uppercase;font-size:24px;letter-spacing:.02em}
+.step h3 small{display:block;font-family:var(--body);font-weight:500;text-transform:none;font-size:16px;color:var(--muted);letter-spacing:0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative;display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--panel2);border:2px solid var(--line);border-radius:14px;padding:10px;color:var(--fg);font:inherit;cursor:pointer;min-width:0}
+.opt img{border-radius:9px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.opt b{font-family:var(--head);font-weight:700;text-transform:uppercase;font-size:17px;line-height:1.1}
+.opt i{font-style:normal;color:var(--muted);font-size:15px;line-height:1.2}
+.opt .p{font-family:var(--body);font-style:italic;font-weight:800;font-size:22px;color:var(--lime)}
+.opt[aria-pressed="true"]{border-color:var(--lime);background:#152010}
+.opt.text{justify-content:center;min-height:64px}
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field label{font-family:var(--head);font-weight:500;text-transform:uppercase;font-size:15px;letter-spacing:.04em;color:var(--muted)}
+.field input,.field textarea{background:var(--panel2);border:2px solid var(--line);border-radius:12px;color:var(--fg);font:500 19px var(--body);padding:12px;width:100%;box-sizing:border-box}
+.field textarea{min-height:76px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--lime);outline:none}
+.nav{display:flex;gap:10px;margin-top:14px}
+.back{flex:0 0 auto;background:none;border:2px solid var(--line);color:var(--muted);border-radius:14px;padding:0 18px;font:700 17px var(--head);text-transform:uppercase;cursor:pointer;min-height:56px}
+.summary{background:var(--panel2);border-radius:14px;padding:14px;margin-bottom:14px}
+.summary .est{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:10px;margin-bottom:10px;flex-wrap:wrap}
+.summary .est span{font-family:var(--head);text-transform:uppercase;font-size:16px;color:var(--muted)}
+.summary .est strong{font-family:var(--body);font-style:italic;font-weight:800;font-size:40px;color:var(--lime);line-height:1}
+.summary pre{margin:0;white-space:pre-wrap;font:500 17px/1.35 var(--body);color:var(--fg)}
+.tip{display:flex;gap:10px;align-items:flex-start;background:rgba(255,138,31,.12);border:1px solid rgba(255,138,31,.45);border-radius:12px;padding:10px 12px;margin-bottom:12px;font-size:17px}
+.tip b{color:var(--sun)}
+.small{color:var(--muted);font-size:15px;text-align:center;margin:10px 0 0}
+.linkbtn{background:none;border:0;color:var(--lime);font:600 17px var(--body);text-decoration:underline;cursor:pointer;padding:6px}
+
+/* load cards */
+.loads{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.load{background:var(--panel);border:2px solid var(--lime-deep);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.load h4{margin:0;padding:8px 10px 2px;font-family:var(--brush);font-weight:400;color:var(--lime);font-size:21px;text-align:center}
+.load img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.load .p{text-align:center;font-family:var(--body);font-style:italic;font-weight:800;font-size:28px;padding:6px 6px 0}
+.load .p small{display:block;font-family:var(--head);font-style:normal;font-weight:500;font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.load p{margin:0;padding:4px 10px 12px;text-align:center;color:var(--muted);font-size:15px;line-height:1.25}
+.load.wide{grid-column:1/-1}
+.load.wide img{aspect-ratio:16/9}
+
+/* single items */
+.items{list-style:none;margin:0;padding:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:4px 14px}
+.items li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.items li:last-child{border-bottom:0}
+.items li span:last-child{font-family:var(--body);font-style:italic;font-weight:800;font-size:22px;color:var(--lime);white-space:nowrap}
+
+/* services */
+.svcs{display:grid;gap:14px}
+.svc{display:grid;grid-template-columns:44% 1fr;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;padding-right:12px}
+.svc img{height:100%;width:100%;object-fit:cover;aspect-ratio:1/1}
+.svc div{min-width:0;padding-block:10px}
+.svc h4{margin:0 0 4px;font-family:var(--head);font-weight:700;text-transform:uppercase;font-size:20px;line-height:1.05}
+.svc p{margin:0 0 6px;color:var(--muted);font-size:16px;line-height:1.25}
+.svc .from{font-family:var(--body);font-style:italic;font-weight:800;color:var(--lime);font-size:20px}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.mini div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.mini b{display:block;font-family:var(--head);text-transform:uppercase;font-size:17px}
+.mini span{font-family:var(--body);font-style:italic;font-weight:800;color:var(--lime);font-size:19px}
+
+/* proof */
+.promise{display:grid;gap:10px}
+.promise div{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}
+.promise svg{width:40px;height:40px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.promise b{display:block;font-family:var(--head);text-transform:uppercase;font-size:19px}
+.promise span{color:var(--muted);font-size:16px}
+.vs{margin-top:16px;border:2px solid var(--sun);border-radius:16px;padding:16px;background:linear-gradient(180deg,rgba(255,138,31,.12),transparent)}
+.vs h4{margin:0 0 8px;font-family:var(--head);text-transform:uppercase;font-size:21px}
+.vs .cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.vs .cols div{background:var(--panel);border-radius:12px;padding:12px 8px}
+.vs .cols small{display:block;font-family:var(--head);text-transform:uppercase;color:var(--muted);font-size:13px;letter-spacing:.05em}
+.vs .cols strong{font-family:var(--body);font-style:italic;font-weight:800;font-size:30px}
+.vs .cols .us strong{color:var(--lime)}
+.vs p{margin:10px 0 0;color:var(--muted);font-size:14px}
+
+/* faq */
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0 14px;margin-bottom:8px}
+summary{cursor:pointer;list-style:none;padding:14px 0;font-family:var(--head);font-weight:500;text-transform:uppercase;font-size:18px;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--lime);font-size:24px;line-height:1}
+details[open] summary::after{content:"\2013"}
+details p{margin:0 0 14px;color:var(--muted)}
+
+.final{text-align:center;background:radial-gradient(80% 60% at 50% 100%,rgba(255,138,31,.25),transparent 70%)}
+.final img{border-radius:16px;margin:0 auto 18px;border:2px solid var(--line)}
+footer{border-top:1px solid var(--line);padding-block:24px 30px;text-align:center;color:var(--muted);font-size:16px}
+footer .brushtext{font-size:26px;display:block;margin-bottom:6px}
+
+/* sticky bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:rgba(7,8,7,.97);border-top:1px solid var(--line);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.bar .in{max-width:600px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr;gap:10px}
+.bar .cta{min-height:54px;font-size:19px}
+
+@media (min-width:640px){.hero .row{grid-template-columns:1.4fr 1fr}}
+@media (max-width:370px){.opts,.loads,.mini,.checks{grid-template-columns:1fr}.svc{grid-template-columns:1fr;padding:0}.svc div{padding:0 12px 12px}.svc img{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:no-preference){.opt,.cta{transition:transform .12s ease,border-color .12s}.opt:active,.cta:active{transform:scale(.98)}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="name">BTI<b>Junk Removal</b></div>
+    <a href="tel:+15204866490">520-486-6490</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <img class="logo" src="img/logo.webp" width="690" height="545" alt="BTI Junk Removal logo: black truck hauling junk in front of the Tucson mountains at sunset">
+      <h1>Tucson junk hauling &amp; cleanouts<span class="brushtext">Junk gone. No stress.</span></h1>
+      <p class="lede">Tap what you need, text us a photo, and get your price before we load anything.</p>
+      <div class="row">
+        <a class="cta" href="#quote"><svg viewBox="0 0 24 24"><path d="M4 12h14M13 6l6 6-6 6"/></svg>Get my price</a>
+        <a class="cta ghost" href="tel:+15204866490">Call now</a>
+      </div>
+      <div class="phone">Call or text <strong>520-486-6490</strong></div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Price before we load</li>
+        <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Small jobs welcome</li>
+        <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>We do the lifting</li>
+        <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Donate before dump</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="quote">
+    <div class="wrap">
+      <div class="h2"><span class="brush">Your price in 4 taps</span></div>
+      <p class="sub">No forms, no waiting on an email. It goes straight to our phone as a text.</p>
+
+      <div class="builder" id="builder">
+        <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+        <div class="step" data-step="0">
+          <h3>What do you need?</h3>
+          <div class="opts" data-key="job">
+            <button type="button" class="opt" data-v="Junk haul-away"><img src="img/load-half.webp" alt="" loading="lazy" width="800" height="600"><b>Junk haul-away</b><i>Furniture, bags, appliances</i></button>
+            <button type="button" class="opt" data-v="Garage or house cleanout"><img src="img/svc-cleanout.webp" alt="" loading="lazy" width="800" height="600"><b>Cleanout</b><i>Garage, house, rental</i></button>
+            <button type="button" class="opt" data-v="Moving help"><img src="img/svc-moving-help.webp" alt="" loading="lazy" width="800" height="600"><b>Moving help</b><i>Load, haul, unload</i></button>
+            <button type="button" class="opt" data-v="Furniture assembly"><img src="img/svc-assembly.webp" alt="" loading="lazy" width="800" height="600"><b>Assembly</b><i>Beds, desks, shelves</i></button>
+            <button type="button" class="opt" data-v="Yard cleanup"><img src="img/svc-yard-cleanup.webp" alt="" loading="lazy" width="800" height="600"><b>Yard cleanup</b><i>Brush, fronds, branches</i></button>
+            <button type="button" class="opt" data-v="Single item pickup"><img src="img/load-few-items.webp" alt="" loading="lazy" width="800" height="600"><b>Just one item</b><i>Couch, mattress, fridge</i></button>
+          </div>
+        </div>
+
+        <div class="step" data-step="1" hidden>
+          <h3>How much stuff?<small>Our trailer is 5×8. Best guess is fine.</small></h3>
+          <div class="opts" data-key="size">
+            <button type="button" class="opt" data-v="A few items" data-p="$95"><img src="img/load-few-items.webp" alt="" loading="lazy" width="800" height="600"><b>A few items</b><span class="p">$95</span></button>
+            <button type="button" class="opt" data-v="Quarter trailer" data-p="$150"><img src="img/load-quarter.webp" alt="" loading="lazy" width="800" height="600"><b>¼ trailer</b><span class="p">$150</span></button>
+            <button type="button" class="opt" data-v="Half trailer" data-p="$250"><img src="img/load-half.webp" alt="" loading="lazy" width="800" height="600"><b>½ trailer</b><span class="p">$250</span></button>
+            <button type="button" class="opt" data-v="Three-quarter trailer" data-p="$350"><img src="img/load-three-quarter.webp" alt="" loading="lazy" width="800" height="600"><b>¾ trailer</b><span class="p">$350</span></button>
+            <button type="button" class="opt" data-v="Full trailer" data-p="$425"><img src="img/load-full.webp" alt="" loading="lazy" width="800" height="600"><b>Full trailer</b><span class="p">$425</span></button>
+            <button type="button" class="opt text" data-v="Not sure, will send photo" data-p="Photo quote"><b>Not sure</b><i>We'll price it from your photo</i></button>
+          </div>
+        </div>
+
+        <div class="step" data-step="2" hidden>
+          <h3>When?</h3>
+          <div class="opts" data-key="when">
+            <button type="button" class="opt text" data-v="Today if possible"><b>Today</b><i>Same-day +$40</i></button>
+            <button type="button" class="opt text" data-v="Tomorrow"><b>Tomorrow</b></button>
+            <button type="button" class="opt text" data-v="This week"><b>This week</b></button>
+            <button type="button" class="opt text" data-v="Flexible"><b>I'm flexible</b></button>
+          </div>
+        </div>
+
+        <div class="step" data-step="3" hidden>
+          <h3>Where &amp; who?</h3>
+          <div class="field"><label for="qName">First name</label><input id="qName" autocomplete="given-name" placeholder="Maria"></div>
+          <div class="field"><label for="qWhere">Cross streets or zip</label><input id="qWhere" autocomplete="postal-code" placeholder="Ina &amp; Thornydale, 85741"></div>
+          <div class="field"><label for="qNote">Anything we should know? (optional)</label><textarea id="qNote" placeholder="Stairs, gate code, heavy items, best time to call"></textarea></div>
+          <div class="nav"><button type="button" class="back" data-back>Back</button><button type="button" class="cta" id="toReview">See my quote</button></div>
+        </div>
+
+        <div class="step" data-step="4" hidden>
+          <h3>Your quote</h3>
+          <div class="summary">
+            <div class="est"><span>Starting at</span><strong id="estPrice">$250</strong></div>
+            <pre id="msgPreview"></pre>
+          </div>
+          <div class="tip"><span><b>Last step:</b> your text opens ready to go. Add a photo of the stuff, then hit send. We text back with your price.</span></div>
+          <a class="cta" id="sendSms" href="sms:+15204866490"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text this to BTI</a>
+          <p class="small">Text didn't open? Send it to <strong>520-486-6490</strong>. <button type="button" class="linkbtn" id="copyMsg">Copy my message</button></p>
+          <div class="nav"><button type="button" class="back" data-back>Back</button><button type="button" class="back" id="restart">Start over</button></div>
+        </div>
+
+        <div class="nav" id="stepNav" hidden><button type="button" class="back" data-back>Back</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="h2"><span class="brush">Load pricing</span></div>
+      <p class="sub">You pay for trailer space you use. Loading, hauling and dump fees included.</p>
+      <div class="loads">
+        <div class="load"><h4>Few items</h4><img src="img/load-few-items.webp" alt="Trailer with a few boxes and bags" loading="lazy" width="800" height="600"><div class="p"><small>starting at</small>$95</div><p>A few bags, boxes or one small piece.</p></div>
+        <div class="load"><h4>¼ Load</h4><img src="img/load-quarter.webp" alt="Trailer with a loveseat and mattress" loading="lazy" width="800" height="600"><div class="p"><small>starting at</small>$150</div><p>A couch and a mattress.</p></div>
+        <div class="load"><h4>½ Load</h4><img src="img/load-half.webp" alt="Trailer half full with a dresser, bed frame and boxes" loading="lazy" width="800" height="600"><div class="p"><small>starting at</small>$250</div><p>A bedroom set or a garage corner.</p></div>
+        <div class="load"><h4>¾ Load</h4><img src="img/load-three-quarter.webp" alt="Trailer three quarters full of furniture, bags and a bike" loading="lazy" width="800" height="600"><div class="p"><small>starting at</small>$350</div><p>Most of a one-car garage.</p></div>
+        <div class="load wide"><h4>Full Load</h4><img src="img/load-full.webp" alt="Trailer loaded to the top" loading="lazy" width="800" height="600"><div class="p"><small>starting at</small>$425</div><p>Loaded to the top of the sides. Big cleanouts.</p></div>
+      </div>
+      <p class="small" style="margin-top:16px"><a class="cta ghost" href="#quote">Price my load</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="h2"><span class="brush">Just one thing?</span></div>
+      <p class="sub">Single-item pickup. We carry it out, you point.</p>
+      <ul class="items">
+        <li><span>Mattress or box spring</span><span>$60</span></li>
+        <li><span>Couch or sofa</span><span>$85</span></li>
+        <li><span>Recliner or chair</span><span>$60</span></li>
+        <li><span>Dresser or bed frame</span><span>$65</span></li>
+        <li><span>Washer or dryer</span><span>$75</span></li>
+        <li><span>Fridge or freezer</span><span>$95</span></li>
+        <li><span>TV</span><span>$50</span></li>
+        <li><span>Hot tub, piano, safe</span><span>Photo quote</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="h2"><span class="brush">More than junk</span></div>
+      <p class="sub">Same crew, same trailer, same straight pricing.</p>
+      <div class="svcs">
+        <div class="svc"><img src="img/svc-cleanout.webp" alt="Garage being cleared out at sunset" loading="lazy" width="800" height="600"><div><h4>Garage &amp; house cleanouts</h4><p>Hauled out and swept. Estates, rentals, move-outs.</p><span class="from">From $250</span></div></div>
+        <div class="svc"><img src="img/svc-moving-help.webp" alt="Two workers carrying a dresser to the trailer" loading="lazy" width="800" height="600"><div><h4>Moving help</h4><p>Two guys and a trailer. Load, move, unload.</p><span class="from">From $95/hr · 2 hr min</span></div></div>
+        <div class="svc"><img src="img/svc-assembly.webp" alt="Worker assembling a bed frame with a drill" loading="lazy" width="800" height="600"><div><h4>Furniture assembly</h4><p>Beds, dressers, desks, shelves. We haul the boxes too.</p><span class="from">From $60/item</span></div></div>
+        <div class="svc"><img src="img/svc-yard-cleanup.webp" alt="Worker loading palm fronds into the trailer" loading="lazy" width="800" height="600"><div><h4>Yard cleanup</h4><p>Palm fronds, brush, branches, yard debris.</p><span class="from">From $150</span></div></div>
+      </div>
+      <div class="mini">
+        <div><b>Move-out clean</b><span>From $175</span></div>
+        <div><b>Donation drop-off</b><span>+$40/stop</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="h2"><span class="brush">Why call BTI</span></div>
+      <p class="sub">Straight answers before we touch anything.</p>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><p><b>Price before we load</b><span>You see the number and say yes before anything goes on the trailer.</span></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg><p><b>No job too small</b><span>One mattress? Fine. Big franchises often won't roll a truck for that.</span></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7"/><path d="M2 7h20v5H2z"/><path d="M12 21V7"/></svg><p><b>Donate first, dump last</b><span>Good stuff goes to local donation centers when it can.</span></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 20V4h10v16"/><path d="M10 8h4M10 12h4"/></svg><p><b>We sweep up</b><span>We leave the spot cleaner than we found it.</span></p></div>
+      </div>
+      <div class="vs">
+        <h4>Small load? Do the math.</h4>
+        <div class="cols">
+          <div><small>Typical Tucson minimum<br>at big haulers</small><strong>$300+</strong></div>
+          <div class="us"><small>BTI small load<br>starting at</small><strong>$95</strong></div>
+        </div>
+        <p>Big-hauler figure based on published Tucson junk removal minimums (about $318 in 2024). Prices vary by company.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="h2"><span class="brush">Quick answers</span></div>
+      <div style="margin-top:20px">
+        <details><summary>How do you set the price?</summary><p>By how much of our 5×8 trailer your stuff fills. Send a photo and we text back a price. You approve it before we load.</p></details>
+        <details><summary>Do I have to carry anything out?</summary><p>No. Point at it and we carry it out, from anywhere on the property.</p></details>
+        <details><summary>What won't you take?</summary><p>Paint, chemicals, fuel, propane tanks, asbestos and other hazardous waste. Ask us if you're not sure.</p></details>
+        <details><summary>Any extra charges?</summary><p>Only if they apply: +$25 per flight of stairs, +$40 same-day, +$15 per tire. Dirt, rock, concrete and roofing are priced from a photo because they're heavy.</p></details>
+        <details><summary>Do I need to be home?</summary><p>Not always. If the stuff is outside or in an open garage, tell us in your text and we'll sort it out.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img src="img/hero-truck-trailer.webp" alt="Black pickup towing a loaded trailer in Tucson at sunset" loading="lazy" width="1200" height="800">
+      <div class="h2"><span class="brush">Ready? Text a photo.</span></div>
+      <p class="sub">Most people get a price back by text the same day.</p>
+      <a class="cta" href="#quote">Get my price</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brushtext">BTI Junk Removal</span>
+    Tucson, AZ · Residential &amp; commercial<br>
+    Call or text 520-486-6490
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Contact">
+  <div class="in">
+    <a class="cta" href="#quote">Get my price</a>
+    <a class="cta ghost" href="tel:+15204866490">Call</a>
+  </div>
+</nav>
+
+<script>
+(function(){
+  var PHONE="+15204866490", state={job:"",size:"",price:"",when:""}, cur=0;
+  var steps=[].slice.call(document.querySelectorAll(".step")), bars=document.querySelectorAll(".progress span");
+  function show(i){
+    cur=i;
+    steps.forEach(function(s){s.hidden=(+s.dataset.step!==i)});
+    bars.forEach(function(b,k){b.className=k<Math.min(i+1,4)?"on":""});
+    document.getElementById("stepNav").hidden=!(i===1||i===2);
+    if(i===4) build();
+  }
+  function save(){try{localStorage.setItem("btiQuote",JSON.stringify({s:state,n:qv("qName"),w:qv("qWhere"),t:qv("qNote")}))}catch(e){}}
+  function qv(id){return document.getElementById(id).value.trim()}
+  document.querySelectorAll(".opts").forEach(function(g){
+    g.addEventListener("click",function(e){
+      var b=e.target.closest(".opt"); if(!b) return;
+      g.querySelectorAll(".opt").forEach(function(o){o.setAttribute("aria-pressed","false")});
+      b.setAttribute("aria-pressed","true");
+      state[g.dataset.key]=b.dataset.v;
+      if(g.dataset.key==="size") state.price=b.dataset.p;
+      save();
+      var next=cur+1;
+      if(g.dataset.key==="job"&&/Moving|assembly/.test(b.dataset.v)){state.size="";state.price="";next=2}
+      setTimeout(function(){show(next)},160);
+    });
+  });
+  document.querySelectorAll("[data-back]").forEach(function(b){b.addEventListener("click",function(){var p=cur-1;if(cur===2&&/Moving|assembly/.test(state.job))p=0;show(Math.max(0,p))})});
+  document.getElementById("toReview").addEventListener("click",function(){save();show(4)});
+  document.getElementById("restart").addEventListener("click",function(){state={job:"",size:"",price:"",when:""};document.querySelectorAll(".opt").forEach(function(o){o.setAttribute("aria-pressed","false")});show(0)});
+  function msg(){
+    var size=state.size||"Not sure";
+    var lines=["Hi BTI! Quote request from your website:","Job: "+(state.job||"Junk haul-away"),"Size: "+size+(state.price&&state.price.charAt(0)==="$"?" (from "+state.price+")":""),"When: "+(state.when||"Flexible"),"Where: "+(qv("qWhere")||"(will send)"),"Name: "+(qv("qName")||"")];
+    if(qv("qNote")) lines.push("Notes: "+qv("qNote"));
+    lines.push("Photo attached:");
+    return lines.join("\n");
+  }
+  function build(){
+    var m=msg();
+    document.getElementById("msgPreview").textContent=m;
+    var p=state.price&&state.price.charAt(0)==="$"?state.price:"Photo quote";
+    if(state.job==="Moving help") p="$95/hr";
+    if(state.job==="Furniture assembly") p="$60/item";
+    document.getElementById("estPrice").textContent=p;
+    document.getElementById("sendSms").href="sms:"+PHONE+"?&body="+encodeURIComponent(m);
+  }
+  var cm=document.getElementById("copyMsg");
+  cm.addEventListener("click",function(){
+    var m=msg();
+    try{navigator.clipboard.writeText(m).then(function(){cm.textContent="Copied"},function(){selectPre()})}catch(e){selectPre()}
+  });
+  function selectPre(){var r=document.createRange();r.selectNodeContents(document.getElementById("msgPreview"));var s=getSelection();s.removeAllRanges();s.addRange(r);cm.textContent="Selected, copy it"}
+  try{var d=JSON.parse(localStorage.getItem("btiQuote")||"null");if(d){document.getElementById("qName").value=d.n||"";document.getElementById("qWhere").value=d.w||"";document.getElementById("qNote").value=d.t||""}}catch(e){}
+  show(0);
+})();
+</script>
+</body>
+</html>
